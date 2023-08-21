@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --orange-clair : #ff9f40;
+    --orange-normal : #ff7f00;
+    --orange-foncé : #cc6600;
+
+    --couleur-li-header : #8c8b8b;
+    --couleur-bg-footer : #24262b;
+
+    --epaisseur-recette-titre : 500;
+    --epaisseur-preparation-titre : 500;
+
+    --taille-recette-titre : 34px;
+    --taille-preparation-titre : 20px;
+}
+
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.recettes{
+    display: flex;
+    margin-left: 20px;
+}
+
+.recette-titre{
+    font-size: var(--taille-recette-titre);
+    font-weight: var(--epaisseur-recette-titre);
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.recette-titre::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 55px;
+    background: linear-gradient(135deg, #ffff5f, #df9a38);
+}
+
+.container1{
+    width: max-content;
+    padding: 1em;
+    box-shadow: 0 5px 10px rgba(254,160,28,0.6);
+    height: 80vh;
+}
+
+.recettes .preparation-titre{
+    font-size: var(--taille-preparation-titre);
+    font-weight: var(--epaisseur-preparation-titre);
+    margin-bottom: 5px;
+    position: relative;
+    padding-right: 110px;
+}
+
+.recettes .preparation-titre::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 28px;
+    background: linear-gradient(135deg, #ffff5f, #df9a38);
+}
+
+.preparation-titre .temps{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container3{
+    display: flex;
+    margin-right: 30px;
+}
+
+.container4{
+    width: max-content;
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+
+.ingredient-titre{
+    font-size: var(--taille-preparation-titre);
+    font-weight: var(--epaisseur-preparation-titre);
+    margin-bottom: 5px;
+    position: relative;
+    padding-right: 115px;
+}
+
+.ingredient-titre::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 19px;
+    background: linear-gradient(135deg, #ffff5f, #df9a38);
+}
+
+
+.container7{
+    display: flex;
+    align-items: center;
+}
+
+.container8{
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.container8 .nbPersonne{
+    margin-left: 48px;
+}
+
+.container2{
+    transform: translateY(-80px);
+    margin-left: 100px;
+}
+
+.container2 img{
+    height: 318px;
+    width: 540px;
+    margin-bottom: 20px;
+    box-shadow: 1px -1px 10px 0px #ffff53, -1px 1px 10px 0 #e9e5e2;
+}
+
+.container2 .etape{
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+}
+
+.container2 .etape::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 28px;
+    background: linear-gradient(135deg, #ffff5f, #df9a38);
+}
+
+.container2 .contenu-etape{
+    margin-bottom: 8px;
+}

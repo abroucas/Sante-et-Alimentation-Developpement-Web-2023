@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --orange-clair : #ff9f40;
+    --orange-normal : #ff7f00;
+    --orange-foncé : #cc6600;
+
+    --couleur-li-header : #8c8b8b;
+    --couleur-bg-footer : #24262b;
+
+    --epaisseur-inscription-texte-titre : 500;
+    --epaisseur-inscription-texte-contenu : 400;
+
+    --taille-inscription-texte-titre : 22px;
+    --taille-inscription-texte-sous-titre : 22px;
+}
+
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hautDePage{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(243, 238, 238);
+    margin-bottom: 100px;
+}
+
+.titrePage{
+    color: orange;
+    font-size: 48px;
+    width: 75%;
+    font-weight: 800;
+    padding: 150px;
+    padding-top: 300px;
+}
+
+.texte{
+    text-align: center;
+}
+
+.image{
+    width: 25%;
+    padding: 100px;
+}
+.contenu{
+    /* margin-bottom: 200px; */
+    width: 100%;
+
+}
+.citation{
+    text-align: center;
+    font-size: 36px;
+    line-height: 70px;
+    margin-bottom: 120px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    box-shadow: 0 5px 10px rgba(254,160,28,0.2);
+    /* border-bottom: 1px solid #df9a38; */
+}
+
+.sante{
+    width: 100%;
+}
+
+.sante .titre{
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 60px;
+    color: orange;
+}
+
+.nutrition .titre{
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 60px;
+    color: orange;
+}
+
+.vignettes{
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-bottom: 80px;
+}
+
+.ligne{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.item{
+   
+    /*  margin-bottom: 100px;*/
+    margin: 50px ;
+}
+
+
+.petiteImage{
+    display: flex;
+    justify-content: center;
+}
+
+.accroche{
+    text-align: center;
+    font-size: 20px;
+}
+
+.item img{
+    height: 100px;
+}
+
+.button{
+    height: 45px;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+
+.button input{
+    height: 100%;
+    width: 40%;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgb(69, 69, 69);
+    background: linear-gradient(135deg, #ffff5f, #df9a38);
+    border-radius: 5px;
+    border: none;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+
+
+.button input:hover{
+    -webkit-transform: scale(1.05);
+    box-shadow: 1px -1px 5px 0px #ffff53, -1px 1px 5px 0 #be7033;
+}

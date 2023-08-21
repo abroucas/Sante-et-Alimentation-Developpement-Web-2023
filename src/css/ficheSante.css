@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --orange-clair : #ff9f40;
+    --orange-normal : #ff7f00;
+    --orange-foncé : #cc6600;
+
+    --couleur-li-header : #8c8b8b;
+    --couleur-bg-footer : #24262b;
+
+    --epaisseur-inscription-texte-titre : 500;
+    --epaisseur-inscription-texte-contenu : 400;
+
+    --taille-inscription-texte-titre : 22px;
+    --taille-inscription-texte-sous-titre : 22px;
+}
+
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section{
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(135deg, #ffff5f, #df9a38); */
+    background-repeat: no-repeat;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;  
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(254,160,28,0.8);
+    background: white;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container .title{
+    font-size: var(--taille-inscription-texte-titre);
+    font-weight: var(--epaisseur-inscription-texte-titre);
+    position: relative;
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 55px;
+    background: linear-gradient(135deg, #ffff5f, #df9a38);
+}
+
+form .titre-puce{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-left: -1px;
+    position: relative;
+}
+
+.titre-puce::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 170px;
+    background: linear-gradient(135deg, #ffff5f, #df9a38);
+}
+
+form .titre-puce2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 1.5em;
+    margin-left: -1px;
+    padding-top: 1em;
+    position: relative;
+}
+
+.titre-puce2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 160px;
+    background: linear-gradient(135deg, #ffff5f, #df9a38);
+}
+
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: var(--epaisseur-inscription-texte-contenu);
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #df9a38;
+}
+
+form .puce-details{
+    display: flex;
+}
+
+form .puce-details .puce-title{
+    width: 250px;
+    font-size: 18px;
+    font-weight: 400;
+    /* background-color: red; */
+}
+
+form .puce-details .category{
+    display: flex;
+    padding: 0 5em;
+    margin-left: 5em;
+}
+
+.cont{
+    display: flex;
+    padding-left: 4em;
+}
+
+.puce-details .category label{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.puce-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background: red;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: #d9d9d9;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .one,
+#dot-4:checked ~ .category label .two,
+#dot-5:checked ~ .category label .one,
+#dot-6:checked ~ .category label .two,
+#dot-7:checked ~ .category label .one,
+#dot-8:checked ~ .category label .two,
+#dot-9:checked ~ .category label .one,
+#dot-10:checked ~ .category label .two,
+#dot-11:checked ~ .category label .one,
+#dot-12:checked ~ .category label .two,
+#dot-13:checked ~ .category label .one,
+#dot-14:checked ~ .category label .two,
+#dot-15:checked ~ .category label .one,
+#dot-16:checked ~ .category label .two,
+#dot-17:checked ~ .category label .three,
+#dot-18:checked ~ .category label .one,
+#dot-19:checked ~ .category label .two,
+#dot-20:checked ~ .category label .three,
+#dot-21:checked ~ .category label .two,
+#dot-22:checked ~ .category label .one,
+#dot-23:checked ~ .category label .three{
+    border-color: #d9d9d9;
+    background: #df9a38;
+}
+
+form .puce2-details{
+    display: flex;
+}
+
+.puce2-details .puce2-title{
+    width: 150px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.puce2-details .category{
+    display: flex;
+}
+
+.puce2-details .category label{
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.8em;
+}
+
+.puce2-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background: red;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: #d9d9d9;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.cont2{
+    padding-left: 2em;
+}
+
+
+
+form input[type="radio"]{
+    display: none;
+}
+
+form .button{
+    height: 45px;
+    margin: 30px 0;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    font-weight: var(--epaisseur-inscription-texte-titre);
+    letter-spacing: 1px;
+    color: rgb(69, 69, 69);
+    background: linear-gradient(135deg, #ffff5f, #df9a38);
+    border-radius: 5px;
+    border: none;
+    transition: all 0.8s;
+}
+
+form .button input:hover{
+    -webkit-transform: scale(1.04);
+    background: linear-gradient(-135deg, #ffff5f, #df9a38);
+}
+
+@media (max-width: 600px) {
+    .container{
+        max-width: 100%;
+    }
+
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    
+    form .user-details .category{
+        width: 100%;
+    }
+
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    .user-details::-webkit-scrollbar{
+        width: 0;
+    }
+}

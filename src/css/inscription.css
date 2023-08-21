@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --orange-clair : #ff9f40;
+    --orange-normal : #ff7f00;
+    --orange-foncé : #cc6600;
+
+    --couleur-li-header : #8c8b8b;
+    --couleur-bg-footer : #24262b;
+
+    --epaisseur-inscription-texte-titre : 500;
+    --epaisseur-inscription-texte-contenu : 400;
+
+    --taille-inscription-texte-titre : 22px;
+    --taille-inscription-texte-sous-titre : 22px;
+}
+
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.section{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(135deg, #ffff5f, #df9a38); */
+    background-repeat: no-repeat;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;  
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(254,160,28,0.8);
+    background: white;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container .title{
+    font-size: var(--taille-inscription-texte-titre);
+    font-weight: var(--epaisseur-inscription-texte-titre);
+    position: relative;
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 55px;
+    background: linear-gradient(135deg, #ffff5f, #df9a38);
+}
+
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: var(--epaisseur-inscription-texte-contenu);
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #df9a38;
+}
+
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+form .gender-details .category{
+    display: flex;
+    width: 80%;
+    gap: 10em;
+    margin-top: 14px;
+    margin-left: 10em;
+}
+
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+
+.gender-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background: red;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: #d9d9d9;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two{
+    border-color: #d9d9d9;
+    background: #df9a38;
+}
+
+form input[type="radio"]{
+    display: none;
+}
+
+form .button{
+    height: 45px;
+    margin: 30px 0;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    font-weight: var(--epaisseur-inscription-texte-titre);
+    letter-spacing: 1px;
+    color: rgb(69, 69, 69);
+    background: linear-gradient(135deg, #ffff5f, #df9a38);
+    border-radius: 5px;
+    border: none;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+
+form .button input:hover{
+    -webkit-transform: scale(1.04);
+    background: linear-gradient(-135deg, #ffff5f, #df9a38);
+}
+
+@media (max-width: 700px) {
+    .container{
+        max-width: 100%;
+        margin: 1em 2em;
+    }
+
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    
+    form .user-details .category{
+        width: 100%;
+    }
+
+    .container form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    .user-details::-webkit-scrollbar{
+        width: 0;
+    }
+}
