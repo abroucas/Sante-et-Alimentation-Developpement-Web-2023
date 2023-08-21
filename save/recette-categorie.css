@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+}
+
+
+header {
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(rgba(255, 192, 203, 0.705), rgba(255, 192, 203, 0.705), rgba(112, 89, 93, 0.705));
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    margin-top: 200px;
+    background-color: pink;
+}
+
+body {
+    background-color: rgb(236, 236, 236);
+}
+
+/*      TITRE       */
+.recette-categorie-titre {
+    text-align: center;
+    margin-top: 100px;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-family: 'Josefin Sans', serif;
+    text-shadow: 3px 2px rgba(112, 112, 112, 0.76);
+}
+
+
+/*      PLACEMENT ELEMENTS      */
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.recettes-liste {
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.recettes-element {
+    width: 350px;
+    height: 240px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    position: static;
+    transition: ease-out 0.2s;
+    overflow: hidden;
+}
+
+/* .recettes-element:hover {
+    scale: 1.05;
+    transform: translateY(-5%);
+    transition: ease-out 0.5s;
+} */
+
+.recettes-element-link {
+    text-decoration: none;
+    height: 240px;
+}
+
+.recettes-element-img {
+    height: 240px;
+    width: 100%;
+    background-size: cover;
+    /* border-radius: 15px; */
+    /* box-shadow: 1px 1px 12px 3px rgb(44, 44, 44); */
+}
+
+.recettes-element-filtre {
+    height: 260px;
+    text-align: center;
+    /* position: relative;
+    bottom: 0px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: rgb(221, 217, 220);
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgba(24, 24, 24, 0.63);
+    transform: translateY(-70px);
+    transition: ease-in-out 0.3s;
+}
+
+.recettes-element-link:hover .recettes-element-filtre {
+    transform: translateY(-96%);
+}
+
+.recette-element-details {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.element-details-plus {
+    width: 20%;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.element-details-logo {
+    height: 30px;
+}
+
+.element-details-barre {
+    width: 3px;
+    height: 60%;
+    background-color: white;
+}
